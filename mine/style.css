@@ -1,0 +1,80 @@
+body {
+    background-color: antiquewhite;
+}
+.mine {
+    text-align: center;
+    background-color: red;
+}
+.mine-top {
+    padding: 15px;
+    font-size:18px;
+    color: #ffffff;
+}
+
+.mine-via {
+    height: 200px;
+}
+
+.mine-via img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.my-order {
+    height: 180px;
+    margin-top: 15px;
+    background-color: #ffffff;
+}
+.order-desc {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 15px;
+    color: #333;
+}
+
+.order-desc::before,.order-desc::after{
+    content: '';
+    display: inline-block;
+    width: 5%;
+    margin: 5px 1%;
+    border-bottom: 1px solid #333;
+}
+
+.order-items {
+    display: flex;
+    justify-content:center;
+}
+.item {
+    padding: 10px 20px;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    background-color: aqua;
+    text-align: center;
+}
+.item-desc {
+    padding: 10px;
+    font-size: 15px;
+    color: #333;
+}
+
+.list {
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+.list-item {
+    height: 45px;
+    border-bottom: 1px solid #ccc;
+}
+.logout {
+    margin-top: 10px;
+}
+.list-item-desc {
+    line-height: 45px;
+    padding: 15px;
+    font-size: 15px;
+    color: #333;
+}
