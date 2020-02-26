@@ -42,7 +42,7 @@
     height: 180px;
     overflow-x: scroll;
     overflow-y: hidden;
-    white-space: nowrap;
+    white-space: nowrap;              
 }
 /* 隐藏滚动条 */
 .movies-list::-webkit-scrollbar {
@@ -86,7 +86,6 @@
 }
 .movie-info {
     display: inline-block;
-
 }
 .movie-info p {
     margin: 8px;
