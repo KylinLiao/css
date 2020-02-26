@@ -1,0 +1,105 @@
+.container {
+    background-color: #f3f3f3;
+}
+
+.nav-top {
+    background-color: red;
+    height: 45px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 45px;
+}
+
+.nav{
+    background-color: #ffffff;
+    height: 45px;
+    font-size: 18px;
+    color: #403838;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+.nav-desc{
+    padding: 5px 15px;
+    line-height: 45px;
+
+}
+.active {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.movies {
+    height: 200px;
+    background-color: #ffffff;
+}
+.movie-desc{
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+.movies-list {
+    height: 180px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+/* 隐藏滚动条 */
+.movies-list::-webkit-scrollbar {
+    display: none;
+}
+.movie-item {
+    display: inline-block;
+    padding: 0 10px;
+}
+.movie-pic {
+   position:relative;
+}
+.movie-hot {
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+    color: #faaf00;
+    font-size: 11px;
+    font-weight: bold;
+}
+.movie-title {
+    color: #222;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-bottom: 3px;
+}
+.movie-date {
+    color: #999;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.list {
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding: 10px 15px;
+}
+.item-date {
+    height: 30px;
+}
+.movie-info {
+    display: inline-block;
+
+}
+.movie-info p {
+    margin: 8px;
+}
+.buy {
+    height: 27px;
+    width: 47px;
+    background-color: orange;
+    color: #ffffff;
+    margin-right: 20px;
+    margin-top: 38px;
+    line-height: 27px;
+    border-radius: 10%;
+    text-align: center;
+    float: right;
+}
