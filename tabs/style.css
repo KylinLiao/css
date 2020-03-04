@@ -1,0 +1,23 @@
+.inline-ul {
+	font-size:0;/* 所有浏览器 */
+	*word-spacing:-1px;/* IE6、7 */
+	}
+.inline-ul ul li{
+	font-size: 12px;
+	letter-spacing: normal;
+	word-spacing: normal;
+	vertical-align:top;
+	display: inline-block;
+}
+
+.widget-tab .widget-title{font-size: 0;}
+.widget-tab .widget-box{margin:0 20px 20px;background:#F7F7F7}
+.widget-tab .widget-title ul li{margin-left:0;width:30%;text-align:center;margin-right:1.3%;padding:8px 1%;}
+.widget-tab .widget-title ul li:hover{background:#F7F7F7}
+.widget-tab .widget-title label{cursor:pointer;display:block; font-size: 14px;}
+.widget-tab .widget-title ul li.active{background:#F7F7F7}
+.widget-tab input{display:none}
+.widget-tab .widget-box ul{display:none}
+#new:checked ~ .widget-title .new,#hot:checked ~ .widget-title .hot,#random:checked ~ .widget-title .random{background:#F7F7F7}
+#new:checked ~ .widget-box .new-list,#hot:checked ~ .widget-box .hot-list,#random:checked ~ .widget-box .random-list{display:block}
+.widget-box ul li a{padding-left: 20px;}
