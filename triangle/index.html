@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>triangle</title>
+  <style>
+    .tri-top {
+      width: 150px;
+      height: 100px;
+      background-color: rgb(198, 219, 238);
+      position: relative;
+    
+    }
+
+    .tri-top::before{
+      width: 0;
+      height: 0;
+      content: '';
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid rgb(198, 219, 238);;
+      position: absolute;
+      top: -8px;
+      left: 75px;
+    }
+
+    .tri-right {
+      width: 150px;
+      height: 100px;
+      border: 1px solid black;
+      position: relative;
+    }
+    .tri-right::before {
+      width: 0;
+      height: 0;
+      content: '';
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid rgb(5, 1, 1);
+      position: absolute;
+      top: 45px;
+      right: -10px;
+    }
+
+    .tri-right::after {
+      width: 0;
+      height: 0;
+      content: '';
+      border-top: 9px solid transparent;
+      border-bottom: 9px solid transparent;
+      border-left: 9px solid #ffffff;
+      position: absolute;
+      top: 45px;
+      right: -7px;
+    }
+  </style>
+</head>
+<body>
+  <div class="tri-top">
+  </div>
+
+<div class="tri-right">
+
+</div>
+</body>
+</html>
