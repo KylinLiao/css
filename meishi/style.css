@@ -1,0 +1,135 @@
+.container {
+    position: relative;
+    background-color: #e0e0e0;
+}
+
+.header {
+    position: relative;
+    height: 48px;
+    line-height: 48px;
+    background-color: red;
+    border-bottom: 1px solid #999999;
+}
+.header div {
+    display: inline-block;
+    margin-bottom:10px;
+}
+.left-arrows {
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    color: #ffffff;
+}
+
+.right-via {
+    float: right;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+.search-box {
+    position:fixed;
+    background-color: #ebeced;
+    height: 30px;
+    line-height: 30px;
+    margin: 8px;
+    border-radius: 16px;
+    left: 36px;
+    right: 36px;
+    text-align: center;
+   
+}
+.search-box span {
+    display: inline-block;
+    line-height: 30px;
+}
+.placeholder {
+    font-size: 16px;
+    text-align: center;
+    color: #999999;
+}
+
+.banner {
+    background-color: aquamarine;
+    text-align: center;
+    height: 75px;
+    line-height: 75px;
+}
+.open-app {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 60px;
+    width: 140px;
+    margin-right: 5px;
+    color: #06c1ae;
+    border-color: #06c1ae;
+    background-color: #ffffff;
+}
+.download-app {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 60px;
+    width: 140px;
+    margin-right: 5px;
+    color:#ffffff;
+    background-color:#06c1ae;
+}
+
+.icon-panel {
+    background-color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+    font-size: 0; /* 设置字体消除边距,配合inline-block */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+}
+.icon-info {
+    /* float: left; */
+    display: inline-block; /* 可以采用浮动，使用浮动时候不需要设置父元素的font-size:0 */
+    width: 25%;
+    margin-top: 5px;
+}
+.icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: darkred;
+}
+.icon-name {
+    font-size: 12px;
+    margin:5px 0 ;
+}
+.selector-box {
+    margin-top: 5px;
+    background-color:#ffffff;
+    overflow: hidden;
+    font-size: 0; /* 设置字体消除边距,配合inline-block */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.selector-item {
+    display: inline-block;
+    width: 25%;
+    font-size: 16px;
+    color:#666;
+    text-align: center;
+    margin: 10px auto;
+}
+.selector-item span::after{
+    content: '';
+    width: 0;
+    height: 0;
+    margin: 2px;
+    display: inline-block;
+    border-top: 8px solid #b7b7b7;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 0;
+}
