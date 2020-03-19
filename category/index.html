@@ -17,7 +17,7 @@
   </div>
   <div class="filter-box">
     <div class="filter-item">
-      <span class="filter-name-active">全部分类</span>
+      <span class="filter-name">全部分类</span>
     </div>
     <div class="filter-item">
       <span class="filter-name">全城</span>
@@ -31,11 +31,28 @@
   </div>
   <div class="filter-content">
     <div class="all-cate">
-      全部分类内容
+      <a class="cate-item"><span class="item-name">全部美食</span><span class="item-number">1987</span></a>
+      <a class="cate-item"><span class="item-name">面包甜点</span><span class="item-number">908</span></a>
     </div>
   </div>
-  <div>
+
+  <div class="list-content">
     content
   </div>
+  <script>
+    $('.filter-item').click(function () {
+      if ($(this).find('span').hasClass('filter-name-active')) {
+        $(this).find('span').addClass('filter-name');
+        $(this).find('span').removeClass('filter-name-active');
+        return;
+      }
+      $(this).find('span').removeClass('filter-name');
+      $(this).find('span').addClass('filter-name-active');
+      $(this).siblings().each(function () {
+        $(this).find('span').removeClass('filter-name-active');
+        $(this).find('span').addClass('filter-name');
+      });
+    });
+  </script>
 </body>
 </html>
