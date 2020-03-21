@@ -125,6 +125,7 @@
   text-align: center;
   margin:5px 0;
   padding-bottom: 6px;
+  margin-bottom: 0;
 }
 .sub-active {
   border-bottom: 1px solid #06c1ae;
@@ -132,6 +133,7 @@
 .business-box {
   overflow-y: scroll;
   overflow-x: hidden;
+  display: none;
 }
 .bus-item {
   display: block;
@@ -191,5 +193,44 @@
 }
 
 .metro-box {
-  display: none;
+  display: block;
+  font-size: 0px;
+  overflow: hidden;
+}
+.line-box {
+  width: 40%;
+  font-size: 14px;
+  display: inline-block;
+}
+.line-content-box {
+  width: 60%;
+  font-size: 14px;
+  float: right;
+}
+.line-active {
+  background-color:#F2F2F2;
+}
+.line {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+.line-name {
+  float: left;
+  margin-left: 15px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.line-total {
+  float: right;
+  font-size: 10px;
+  margin-right: 5px;
+}
+.sub-line-content {
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
