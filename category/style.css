@@ -59,9 +59,28 @@
 }
 
 .all-cate {
-  position: absolute;
-  display: block;
-  z-index: 99px;
+  position: relative;
+  z-index: 99999;
+  background-color: #ffffff;
+  display: none;
+}
+.all-city {
+  position: relative;
+  display: none;
+  z-index: 99999;
+  background-color: #ffffff;
+}
+.sort {
+  position: relative;
+  display: none;
+  z-index: 99999;
+  background-color: #ffffff;
+}
+.filter {
+  position: relative;
+  display: none;
+  z-index: 99999;
+  background-color: #ffffff;
 }
 .cate-item {
   position: relative;

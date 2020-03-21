@@ -16,23 +16,35 @@
     download
   </div>
   <div class="filter-box">
-    <div class="filter-item">
+    <div class="filter-item" data-id="1">
       <span class="filter-name">全部分类</span>
     </div>
-    <div class="filter-item">
-      <span class="filter-name">全城</span>
+    <div class="filter-item" data-id="2">
+      <span class="filter-name" >全城</span>
     </div>
-    <div class="filter-item">
+    <div class="filter-item" data-id="3">
       <span class="filter-name">默认排序</span>
     </div>
-    <div class="filter-item">
+    <div class="filter-item" data-id="4">
       <span class="filter-name">筛选</span>
     </div>
   </div>
   <div class="filter-content">
-    <div class="all-cate">
-      <a class="cate-item"><span class="item-name">全部美食</span><span class="item-number">1987</span></a>
-      <a class="cate-item"><span class="item-name">面包甜点</span><span class="item-number">908</span></a>
+    <div class="all-cate" data-id="1">
+      <a class="cate-item"><span class="item-name">全部美食1</span><span class="item-number">1987</span></a>
+      <a class="cate-item"><span class="item-name">面包甜点1</span><span class="item-number">908</span></a>
+    </div>
+    <div class="all-city" data-id="2">
+      <a class="cate-item"><span class="item-name">全部美食2</span><span class="item-number">1987</span></a>
+      <a class="cate-item"><span class="item-name">面包甜点2</span><span class="item-number">908</span></a>
+    </div>
+    <div class="sort" data-id="3">
+      <a class="cate-item"><span class="item-name">全部美食3</span><span class="item-number">1987</span></a>
+      <a class="cate-item"><span class="item-name">面包甜点3</span><span class="item-number">908</span></a>
+    </div>
+    <div class="filter" data-id="4">
+      <a class="cate-item"><span class="item-name">全部美食4</span><span class="item-number">1987</span></a>
+      <a class="cate-item"><span class="item-name">面包甜点4</span><span class="item-number">908</span></a>
     </div>
   </div>
 
@@ -41,18 +53,38 @@
   </div>
   <script>
     $('.filter-item').click(function () {
+      clickId = $(this).attr('data-id');
+      
       if ($(this).find('span').hasClass('filter-name-active')) {
         $(this).find('span').addClass('filter-name');
         $(this).find('span').removeClass('filter-name-active');
+        isHide = true;
+        filterContent(clickId,isHide);
         return;
       }
+    
       $(this).find('span').removeClass('filter-name');
       $(this).find('span').addClass('filter-name-active');
       $(this).siblings().each(function () {
         $(this).find('span').removeClass('filter-name-active');
         $(this).find('span').addClass('filter-name');
+        filterContent(clickId);
       });
     });
+    function filterContent(clickId,isHide = false) {
+      $('.filter-content').children().each(function(){
+        currentId = $(this).attr('data-id');
+        isShow = currentId == clickId ? true : false;
+        if (isShow) {
+          $(this).show();
+        }else{
+          $(this).hide();
+        }
+        if (isHide){
+          $(this).hide();
+        }
+      });
+    }
   </script>
 </body>
 </html>
